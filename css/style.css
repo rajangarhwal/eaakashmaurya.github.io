@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.landing{
+    height: 100vh; 
+    width: 100vw;
+    background-image: url(../img/landing.jpg);
+    background-repeat:  no-repeat; 
+    background-size: cover;
+}
+
+.landing .centered{
+    top: 45%;
+    position: absolute;
+    width: 100%;
+}
+
+.landing .centered h1{
+    color: #fdd007;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal 300 64px/1 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#navbar1{
+    padding-top: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+}
+
+#navbar1 a{
+    color: white;
+    transition: 0.3s;
+}
+
+#navbar1 .dropdown-item{
+    font: normal 300 16px/1 'Josefin Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+#navbar1 .dropdown-menu, .dropdown-item:hover{
+    font: normal 300 16px/1 'Josefin Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+#navbar1 a:hover{
+    color:#fdd007;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+#footer{
+    padding-top: 15px;
+    padding-bottom: 25%;
+    background-color: #222831;
+    color: white;;
+    text-transform: uppercase;
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+#footer h5{
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+}
+
+.demo a {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: .3s;
+}
+.demo a:hover {
+    color: #fdd007;
+    opacity: .8;
+}
+
+#scroll a {
+    padding-top: 70px;
+}
+
+#scroll a span {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    -webkit-animation: sdb06 1.5s infinite;
+    animation: sdb06 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb06 {
+    0% {
+        -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+@keyframes sdb06 {
+    0% {
+        transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}

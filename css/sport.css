@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.landing{
+    height: 100vh; 
+    width: 100vw;
+    background-repeat:  no-repeat; 
+    background-size: cover;
+}
+
+.landing .centered{
+    top: 25%;
+    position: absolute;
+    width: 100%;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+.landing .centered h1{
+    color: #fdd007;
+    text-transform: uppercase;
+    text-align: center;
+    font: normal 300 44px/1 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.landing .centered hr{
+    width: 10%;
+    border: 1px solid #fdd007;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,50px,0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#navbar1{
+    padding-top: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+}
+
+#navbar1 a{
+    color: white;
+    transition: 0.3s;
+}
+
+#navbar1 .dropdown-item{
+    font: normal 300 16px/1 'Josefin Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+#navbar1 .dropdown-menu, .dropdown-item:hover{
+    font: normal 300 16px/1 'Josefin Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+#navbar1 a:hover{
+    color:#fdd007;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+#footer{
+    padding-top: 15px;
+    padding-bottom: 25%;
+    background-color: #222831;
+    color: white;;
+    text-transform: uppercase;
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+#footer h5{
+    font: normal 300 20px/1 'Josefin Sans', sans-serif;
+}
+
